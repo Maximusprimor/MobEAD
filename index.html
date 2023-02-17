@@ -22,8 +22,8 @@
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
         <!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-        <nav class="navbar navbar-fixed-top">
-            <nav class="navbar-inner">
+        <nav class="navbar navbar-fixed-top" aria-label="">
+            <nav class="navbar-inner" aria-label="">
                 <section class="container navegacao-topo">
                     <a class="brand">MobEAD - UNYLEYA - Engenharia DevOps</a>
                     <ul class="nav">
@@ -110,7 +110,6 @@
     <footer id="footer">
         <div class="pull-right navegacao" data-bind="with: CurrentTest">
             <div class="inline" data-bind="visible:!ShowResult()"><span data-bind="text:CurrentQuestion() + 1"></span>/<span data-bind="text:QuestionsAmount + 1"></span></div>
-            <!--<a href="#"><i class="icon-home" data-bind="click:openTestList"></i></a>-->
             <a href="#"><i class="icon-circle-arrow-left" data-bind="click:previousQuestion"></i></a>
             <div class="inline" data-bind="visible:!ShowResult()"><a href="#"><i class="icon-circle-arrow-right" data-bind="click:nextQuestion"></i></a></div>
             <a href="#"><i class="icon-check" data-bind="click:endTest"></i></a>
@@ -125,8 +124,6 @@
     <script src="Scripts/mobEAD.dataAccess.js"></script>
     <script src="Scripts/mobEAD.js"></script>
 
-    <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-       mathiasbynens.be/notes/async-analytics-snippe t-->
     <!--script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
